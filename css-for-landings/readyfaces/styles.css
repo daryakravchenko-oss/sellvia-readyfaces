@@ -139,7 +139,7 @@ h1,h2,h3{letter-spacing:-.02em;text-wrap:balance}
 /* split art (right visual): photo + floating card over the dark half */
 .fb-art-stage{position:absolute;left:0;top:0;bottom:0;width:50%;z-index:2;pointer-events:none;overflow:visible}
 .fb-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-/* freebasic overlay: product card + 3 stat cards — choreographed reveal s1..s4 (wrappers animate entrance, inner cards hover) */
+/* freebasic overlay: product card + 3 stat cards – choreographed reveal s1..s4 (wrappers animate entrance, inner cards hover) */
 .fb-overlay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:flex;gap:18px;align-items:flex-start;z-index:5;pointer-events:auto;--navy:#2A1F14;--slate-300:#B69F7E;--slate-400:#8D7558;--f-serif:'Cormorant Garamond',Georgia,serif}
 .fb-pcard{width:384px;flex:0 0 auto;opacity:0;transform:translate(108px,26px);transition:opacity .6s ease,transform .85s cubic-bezier(.22,1,.36,1)}
 .fb-overlay.s1 .fb-pcard{opacity:1;transform:translate(108px,0)}

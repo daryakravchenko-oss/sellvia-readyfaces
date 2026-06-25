@@ -1,7 +1,7 @@
 # sellvia-readyfaces
 
 Лендинг **readyfaces** для Sellvia. За основу взят клон проверенной страницы
-[premium-store-fashion](https://sellvia.com/premium-store-fashion) — та же вёрстка,
+[premium-store-fashion](https://sellvia.com/premium-store-fashion) – та же вёрстка,
 стили и скрипты, все пути переименованы под новую страницу `readyfaces`.
 
 ## Структура
@@ -25,7 +25,7 @@ sellvia-readyfaces/
 ## Локальный предпросмотр
 
 `index.html` использует **абсолютные пути** (`/css-for-landings/...`), как на проде,
-поэтому открывать файл напрямую (`file://`) нельзя — нужен статический сервер из корня репозитория:
+поэтому открывать файл напрямую (`file://`) нельзя – нужен статический сервер из корня репозитория:
 
 ```bash
 # Node
@@ -38,14 +38,14 @@ node -e "require('http').createServer((q,s)=>require('serve-handler')(q,s)).list
 
 ## Что осталось внешним (ссылки на sellvia.com)
 
-Намеренно не локализованы — это общие ресурсы темы и сторонние сервисы:
+Намеренно не локализованы – это общие ресурсы темы и сторонние сервисы:
 
-- **Шрифт** SF Pro Display — `https://sellvia.com/wp-content/themes/sellvia/fonts/...`
+- **Шрифт** SF Pro Display – `https://sellvia.com/wp-content/themes/sellvia/fonts/...`
 - **Google Tag Manager** (`GTM-PWCP7QD`) и виджет чата (`sellvia-chat`)
 
 ## Что нужно адаптировать под readyfaces
 
-Контент пока «фэшн» — это шаблон-основа. При переделке под нишу readyfaces поменять:
+Контент пока «фэшн» – это шаблон-основа. При переделке под нишу readyfaces поменять:
 
 - Тексты, заголовки, отзывы, FAQ в `index.html`
 - Картинки/видео в `images-for-landings/readyfaces/img/`
@@ -57,4 +57,4 @@ node -e "require('http').createServer((q,s)=>require('serve-handler')(q,s)).list
 
 Папки `css-for-landings/`, `js-for-landings/`, `images-for-landings/` и `index.html`
 кладутся в соответствующие пути в корне сайта Sellvia. `main.js` сам подставляет
-`external_source` из пути страницы — отдельная настройка не нужна.
+`external_source` из пути страницы – отдельная настройка не нужна.
