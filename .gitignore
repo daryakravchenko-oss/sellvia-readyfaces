@@ -1,0 +1,21 @@
+# Claude Code / local tooling
+.claude/
+*.log
+
+# Temp working files
+_*.html
+_*.css
+_*.js
+_tmp/
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+
+# Node (if tooling is added later)
+node_modules/
