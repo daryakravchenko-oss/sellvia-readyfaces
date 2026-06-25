@@ -2,11 +2,14 @@
 .claude/
 *.log
 
-# Temp working files
-_*.html
-_*.css
-_*.js
+# Temp working & capture-tooling files (anything starting with _)
+_*
 _tmp/
+
+# Capture tooling (puppeteer-core + sharp), not part of the page
+node_modules/
+package.json
+package-lock.json
 
 # OS noise
 Thumbs.db
@@ -16,6 +19,3 @@ desktop.ini
 # Editors
 .vscode/
 .idea/
-
-# Node (if tooling is added later)
-node_modules/
