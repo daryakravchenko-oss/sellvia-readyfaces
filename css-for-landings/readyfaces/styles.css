@@ -251,32 +251,6 @@ h1,h2,h3{letter-spacing:-.02em;text-wrap:balance}
 .how-note{text-align:center;margin-top:40px;font-size:14.5px;color:var(--c-gray2);position:relative}
 
 
-/* ── TESTIMONIALS (chicmentor style) ── */
-.test-sec{background:#FAEFDE;padding:120px 0;overflow:hidden}
-.test-head{text-align:center;max-width:680px;margin:0 auto 52px}
-.tslider{max-width:1180px;margin:0 auto;position:relative}
-.tslider-viewport{overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 9%,#000 91%,transparent 100%)}
-.tslider-viewport.is-drag{cursor:grabbing}
-.tslider-track{display:flex;gap:24px;will-change:transform}
-.tslide{flex:0 0 auto;display:flex;opacity:.4;transition:opacity .55s ease}
-.tslide.is-active{opacity:1}
-.tslide-card{flex:0 0 auto;display:flex;background:#fff;border-radius:24px;overflow:hidden;height:350px}
-.tslide-photo{flex:0 0 350px;position:relative}
-.tslide-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;pointer-events:none;-webkit-user-drag:none}
-.tslide-body{flex:0 0 460px;display:flex;flex-direction:column;justify-content:center;padding:36px clamp(28px,3.2vw,44px)}
-.tslide-body .tstars{color:var(--c-amber);font-size:15px;letter-spacing:2px;margin-bottom:14px}
-.tslide-body .tquote{font-size:16px;line-height:1.55;color:var(--c-near);font-weight:500;margin:0 0 16px}
-.tslide-body .tname{font-size:14.5px;font-weight:600;color:var(--c-near)}
-.tslide-body .tloc{font-size:12.5px;color:var(--c-gray2);margin-top:3px}
-.tslider-dots{display:flex;justify-content:center;gap:8px;margin-top:34px}
-.tdot{width:8px;height:8px;padding:0;border:none;border-radius:50%;background:rgba(115,93,71,.4);cursor:pointer;transition:width .3s,background .3s}
-.tdot.is-active{width:22px;border-radius:5px;background:#735D47}
-@media(max-width:900px){
-  .tslide{flex-basis:86%}
-  .tslide-card{flex:1;flex-direction:column;height:auto}
-  .tslide-photo{flex:none;width:100%;aspect-ratio:1}
-  .tslide-body{flex:initial;width:auto;padding:24px 22px 28px}
-}
 
 /* ── FAQ (chicmentor style) ── */
 .faq-sec{background:#fff;padding:120px 0}
@@ -377,7 +351,7 @@ h1,h2,h3{letter-spacing:-.02em;text-wrap:balance}
   .hp-shell{padding:0}
   .hp-grid{padding-left:16px;padding-right:16px}
   .hp-chips{flex-direction:column;align-items:flex-start;width:fit-content;margin-left:auto;margin-right:auto}
-  .freebasic-section,.get-sec,.bento-sec,.how-sec,.test-sec,.faq-sec{padding:72px 0}
+  .freebasic-section,.get-sec,.bento-sec,.how-sec,.faq-sec{padding:72px 0}
   .freebasic-section{padding-bottom:0}
   .fb-art-stage{max-width:none;width:100vw;margin:40px calc(50% - 50vw) 0;aspect-ratio:4/5}
   .fb-video{border-radius:0}
@@ -389,7 +363,7 @@ h1,h2,h3{letter-spacing:-.02em;text-wrap:balance}
   .get-list{grid-template-columns:1fr}
   .bundle-grid{grid-template-columns:1fr}
   .bcard,.bcard.tall{grid-column:auto;aspect-ratio:1/1}
-  .bcard,.tslide-card{border-radius:10px}
+  .bcard{border-radius:10px}
   .hp-cta-row{flex-direction:column;align-items:center}
   .hp-cta-primary,.hp-cta-secondary,.bento-foot .btn,.fb-inner .bonus-left .btn-dark,.final-btns .btn{display:flex;width:100%;max-width:358px;height:54px;margin-left:auto;margin-right:auto;justify-content:center}
   .fb-inner .bonus-left>.appear:has(.btn-dark){align-self:stretch}
