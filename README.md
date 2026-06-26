@@ -28,13 +28,12 @@ sellvia-readyfaces/
 поэтому открывать файл напрямую (`file://`) нельзя – нужен статический сервер из корня репозитория:
 
 ```bash
-# Node
-npx serve .
-# затем открыть http://localhost:3000
-
-# или одноразовый сервер на Node
-node -e "require('http').createServer((q,s)=>require('serve-handler')(q,s)).listen(8000)"
+node serve.js
+# затем открыть http://localhost:8123
 ```
+
+`serve.js` – крошечный статический сервер на чистом Node, без зависимостей.
+Свой порт: `node serve.js 3000`. Останавливается по Ctrl+C.
 
 ## Что осталось внешним (ссылки на sellvia.com)
 
