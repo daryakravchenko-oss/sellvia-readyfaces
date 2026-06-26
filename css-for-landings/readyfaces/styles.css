@@ -154,23 +154,23 @@ h1,h2,h3{letter-spacing:-.02em;text-wrap:balance}
 .fb-statcard:hover{transform:translateY(-6px);box-shadow:0 6px 12px rgba(42,31,20,.05),0 14px 30px rgba(42,31,20,.09),0 0 0 1.5px rgba(142,145,118,.3)}
 .fb-stat-v{font-family:var(--f-serif);font-size:clamp(19px,1.9vw,25px);font-weight:600;letter-spacing:-.01em;color:var(--navy);line-height:1.02;white-space:nowrap}
 .fb-stat-l{font-size:13px;color:var(--slate-400);margin-top:5px;line-height:1.3;white-space:nowrap}
-.pcard{position:relative;border-radius:24px;display:flex;flex-direction:column;min-width:0;background:rgba(142,145,118,.18);padding:2px;box-shadow:0 1px 2px rgba(42,31,20,.06),0 3px 9px rgba(42,31,20,.05),0 0 0 .5px rgba(248,245,236,.6) inset;transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1)}
-.pcard:hover{transform:translateY(-6px);box-shadow:0 6px 12px rgba(42,31,20,.05),0 16px 34px rgba(42,31,20,.09),0 0 0 .5px rgba(255,255,255,.6) inset}
-.pcard-inner{position:relative;overflow:hidden;border-radius:22px;background:#F2EADA;display:flex;flex-direction:column;height:100%;min-width:0}
+/* freebasic product card – readyfaces "pcard" look (colors + DM Serif title) */
+.pcard{position:relative;border-radius:18px;display:flex;flex-direction:column;min-width:0;transition:transform .6s cubic-bezier(.22,1,.36,1),box-shadow .6s cubic-bezier(.22,1,.36,1)}
+.pcard:hover{transform:translateY(-5px)}
+.pcard-inner{position:relative;overflow:hidden;border-radius:17px;background:linear-gradient(to top,#F6F8FC 0,#E8EEF6 100%);display:flex;flex-direction:column;height:100%;min-width:0;box-shadow:0 1px 2px rgba(15,23,42,.04),0 2px 6px rgba(15,23,42,.04),0 0 0 .5px rgba(255,255,255,.5) inset;transition:box-shadow .6s cubic-bezier(.22,1,.36,1)}
+.pcard:hover .pcard-inner{box-shadow:0 4px 8px rgba(15,23,42,.04),0 8px 20px rgba(15,23,42,.06),0 0 0 .5px rgba(255,255,255,.6) inset}
 .pcard-inner::before{content:'';position:absolute;top:0;left:5%;right:5%;height:1px;z-index:4;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.7) 30%,rgba(255,255,255,.9) 50%,rgba(255,255,255,.7) 70%,transparent)}
-.pcard-top{aspect-ratio:1/1;position:relative;overflow:hidden;margin:7px 7px 0;border-radius:18px;box-shadow:0 1px 4px rgba(0,0,0,.08) inset;background:linear-gradient(135deg,#E5D6B6 0%,#D8C6A8 50%,#BFA98A 100%)}
-.pcard-top img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%;transition:transform .7s cubic-bezier(.22,1,.36,1),filter .5s}
+.pcard-top{aspect-ratio:1/1;position:relative;overflow:hidden;margin:6px 6px 0;border-radius:13px;box-shadow:0 1px 4px rgba(0,0,0,.08) inset;background:linear-gradient(135deg,#f0ebe4 0,#e8e3dc 50%,#ddd8d0 100%)}
+.pcard-top img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.22,1,.36,1),filter .5s}
 .fb-pcard:hover .pcard-top img{transform:scale(1.05);filter:brightness(1.04)}
-.pcard-body{padding:15px 18px 19px;position:relative;z-index:2;flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}
-.pcard-cat{display:inline-block;padding:4px 11px;border-radius:7px;background:var(--cat-bg,rgba(168,104,71,.1));border:1px solid var(--cat-border,rgba(168,104,71,.22));font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--cat-fg,#7D4A2F);margin-bottom:9px;align-self:flex-start}
-.pcard-name{font-family:var(--f-serif);font-size:1.3rem;color:var(--navy);margin-bottom:11px;line-height:1.25;white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 78%,transparent 98%);mask-image:linear-gradient(90deg,#000 78%,transparent 98%)}
-.pcard-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(42,31,20,.06);padding-top:11px;margin-top:auto}
+.pcard-body{padding:14px 16px 16px;position:relative;z-index:2;flex:1;display:flex;flex-direction:column;min-width:0;overflow:hidden}
+.pcard-cats{display:flex;gap:6px;margin-bottom:10px}
+.pcard-cat{display:inline-block;padding:4px 10px;border-radius:6px;background:rgba(15,23,42,.04);font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#6E675C;white-space:nowrap}
+.pcard-name{font-family:'DM Serif Display',Georgia,serif;font-weight:400;font-size:1.32rem;color:#1F1B16;margin-bottom:12px;line-height:1.25;white-space:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 75%,transparent 98%);mask-image:linear-gradient(90deg,#000 75%,transparent 98%)}
+.pcard-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(15,23,42,.06);padding-top:11px;margin-top:auto}
 .pcard-prices{display:flex;align-items:center;gap:7px}
-.pcard-price{font-size:1.28rem;font-weight:800;color:var(--navy)}
-.pcard-price-old{font-size:.92rem;color:var(--slate-300);text-decoration:line-through}
-.pcard-rating{display:flex;align-items:center;gap:4px}
-.pcard-stars{display:flex;gap:2px;color:#C39A4C;font-size:.84rem;line-height:1}
-.pcard-reviews{font-size:.74rem;color:var(--slate-400);font-weight:500}
+.pcard-price{font-size:1.28rem;font-weight:800;color:#1F1B16}
+.pcard-price-old{font-size:.92rem;color:#938B7E;text-decoration:line-through}
 
 /* ── GET-SEC (niche) ── */
 .get-sec{background:var(--cream);position:relative;overflow:hidden;padding:120px 0}
