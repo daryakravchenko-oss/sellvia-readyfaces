@@ -1,21 +1,51 @@
-# Claude Code / local tooling
-.claude/
-*.log
-
-# Temp working & capture-tooling files (anything starting with _)
-_*
-_tmp/
-
-# Capture tooling (puppeteer-core + sharp), not part of the page
-node_modules/
-package.json
-package-lock.json
-
-# OS noise
-Thumbs.db
-desktop.ini
+# ── OS junk ──
 .DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
 
-# Editors
-.vscode/
+# ── Editor / IDE ──
 .idea/
+.vscode/
+.claude/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*.swn
+.*.swp
+.history/
+*.bak
+*.tmp
+*~
+
+# ── Build / dependency artefacts (in case tooling is added later) ──
+node_modules/
+bower_components/
+dist/
+build/
+out/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.turbo/
+
+# ── Logs ──
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Local env / secrets ──
+.env
+.env.local
+.env.*.local
+.secrets/
+
+# ── Misc ──
+*.orig
+*.rej
